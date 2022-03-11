@@ -1,0 +1,74 @@
+# python-practicle-exam
+1a)
+def sum(n):
+    s = 0
+    for i in range(1,n+1,2):
+        s+=i
+    return s
+n=int(input("enter the value"))
+print(sum(n))
+
+
+b)def sum(n):
+    s = 0
+    for i in range(1,n+1):
+        if i%2!=0:
+           s+=i
+    return s
+n=int(input("enter the value"))
+print(sum(n))
+c)
+def sum(n):
+    s = 0
+    for i in range(1,n+1):
+        s+=i
+    return s
+n=int(input("enter the value"))
+print(sum(n))
+
+2)
+a)t1=(1,2,5,7,9,2,4,6,8,10)
+l=int(len(t1)/2)
+print(t1[:l])
+print(t1[l:])
+
+b)
+t1=(1,2,5,7,9,2,4,6,8,10)
+l=[]
+for i in t1:
+    if i%2==0:
+        l.append(i)
+print(tuple(l))
+c)t1=(1,2,5,7,9,2,4,6,8,10)
+t2=(11,13,15)
+print(t1+t2)
+d)t1=(1,2,5,7,9,2,4,6,8,10)
+print(max(t1))
+print(min(t1))
+
+3)
+a)n=" Kumar"
+print(len(n))
+b)n="Asfggdbhbr"
+n2="sgbsdkfsjbk"
+n3="sdnjksdbuov"
+if (len(n)>len(n2) and len(n)>len(n3)):
+    print("n")
+elif (len(n2)>len(n) and len(n2)>len(n3)):
+    print("n2")
+else:
+    print("n3")
+c)def str():
+    ch=[]
+    for i in 'hello world':
+        ch.append(i)
+    for j in range(1,len(ch),2):
+        ch[j]= '#'
+    s=''
+    for k in ch:
+        s=s+k
+    print(s)
+str()
+d)n="dont behave like butterfly be like eagle"
+a=n.split(" ")
+print(len(a))
